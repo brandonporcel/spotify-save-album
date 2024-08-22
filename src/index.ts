@@ -4,7 +4,7 @@ import fs from "fs";
 import { AlbumResponse } from "./types/definitions";
 dotenv.config();
 
-const albums = [""];
+const albums = ["Natalia Lafourcade - De Todas las Flores (2022)"];
 
 const parseAlbums = (album: string) => {
   const yearMatch = album.match(/\((\d{4})\)$/);
