@@ -1,12 +1,12 @@
 import dotenv from "dotenv";
 import axios from "axios";
 import fs from "fs";
-import { AlbumResponse } from "./types/definitions";
+import { AlbumResponse, ParsedAlbum } from "./types/definitions";
 dotenv.config();
 
-const albums = [""];
+const albums: string[] = [];
 
-const parseAlbums = (album: string) => {
+const parseAlbums = (album: string): ParsedAlbum => {
   const yearMatch = album.match(/\((\d{4})\)$/);
   const year = yearMatch ? yearMatch[1] : "Unknown";
   const nameWithoutYear = album.replace(/\s*\(\d{4}\)$/, "").trim();
@@ -18,8 +18,6 @@ const parseAlbums = (album: string) => {
     year,
   };
 };
-const parsedAlbums = albums.map(parseAlbums);
-console.log(`Saving ${parsedAlbums.length} albums...`);
 
 let accessToken = "";
 
@@ -87,7 +85,9 @@ const logMismatch = (message: string) => {
   fs.appendFileSync(filePath, message + "\n", "utf8");
 };
 
-const handleItems = async (): Promise<AlbumResponse[]> => {
+const handleItems = async (
+  parsedAlbums: ParsedAlbum[]
+): Promise<AlbumResponse[]> => {
   try {
     const results = await Promise.all(
       parsedAlbums.map(async (album) => {
@@ -137,8 +137,11 @@ const saveAlbumToFav = async (albumId: string) => {
 };
 
 const main = async () => {
+  if (albums.length === 0) return;
   await refreshToken();
-  const albumsToSave = await handleItems();
+
+  const parsedAlbums = albums.map(parseAlbums);
+  const albumsToSave = await handleItems(parsedAlbums);
 
   if (albumsToSave.length > 0) {
     await Promise.all(albumsToSave.map((album) => saveAlbumToFav(album.id)));

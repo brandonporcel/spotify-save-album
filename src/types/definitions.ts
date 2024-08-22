@@ -17,3 +17,9 @@ export interface AlbumResponse {
 export interface ExternalUrls {
   spotify: string;
 }
+
+export interface ParsedAlbum {
+  name: string;
+  artist: string;
+  year: string;
+}
