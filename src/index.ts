@@ -4,26 +4,7 @@ import fs from "fs";
 import { AlbumResponse } from "./types/definitions";
 dotenv.config();
 
-const albums = [
-  "Patricia Malanca - Traerán Ríos de Tango las Páginas de un Libro (2021)",
-  "Melingo - Tangos bajos (1998)",
-  "Melingo - Linyera (2014)",
-  "Harold Melvin & The Blue Notes - I Miss You (1972)",
-  "Tita Merello - Voz de tango (1967)",
-  "Meyhem Lauren - Respect the Fly Shit (2012)",
-  "mhtresuno - De la villa pal mundo (2024)",
-  "Mir Nicolás & T&K - 29 (2021)",
-  "Nico Miseria - Barriobajero navajero (2019)",
-  "The Monkees - Headquarters (1967)",
-  "The Monkees - Pisces, Aquarius, Capricorn & Jones Ltd. (1967)",
-  "Sofía Naara - Las torpezas (2022)",
-  "Nafta - NAFTA II (2023)",
-  "Rico Nasty - Las ruinas (2022)",
-  "Nichess One, 3m5 & Lil Supa - Metal (2023)",
-  "Niño Maldito - SA TA NA MA (2023)",
-  "Noname - Sundial (2023)",
-  "O.L.I.V.I.A - 99% (2020)",
-];
+const albums = [""];
 
 const parseAlbums = (album: string) => {
   const yearMatch = album.match(/\((\d{4})\)$/);
@@ -161,8 +142,8 @@ const main = async () => {
 
   if (albumsToSave.length > 0) {
     await Promise.all(albumsToSave.map((album) => saveAlbumToFav(album.id)));
+    console.log(`Has been saved ${albumsToSave.length} albums 🙂`);
   }
-  console.log(`Has been saved ${albumsToSave.length} albums 🙂`);
 };
 
 main();
