@@ -26,5 +26,5 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run index.js
-        run: node index.js
+      - name: Run dist/index.js
+        run: node dist/index.js
