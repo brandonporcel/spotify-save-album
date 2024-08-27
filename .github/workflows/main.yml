@@ -31,3 +31,12 @@ jobs:
 
       - name: Run dist/index.js
         run: node dist/index.js
+
+      - name: Commit and push log file if it exists
+        if: ${{ success() && steps.run_index_js.outputs.check_created == 'true' }}
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          git add check.txt
+          git commit -m "Add log of failed albums"
+          git push origin HEAD:logs

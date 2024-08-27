@@ -4,9 +4,7 @@ import fs from "fs";
 import { AlbumResponse, ParsedAlbum } from "./types/definitions";
 dotenv.config();
 
-const albums = [ 
-    "OutKast - Speakerboxxx / The Love Below (2003)",
-];
+const albums = ["OutKast - Speakerboxxx / The Love Below (2003)"];
 
 const parseAlbums = (album: string): ParsedAlbum => {
   const yearMatch = album.match(/\((\d{4})\)$/);
@@ -84,9 +82,11 @@ const searchAlbum = async (albumName: string) => {
 
 const logMismatch = (message: string) => {
   const filePath = "check.txt";
-  console.log(message)
+  console.log(message);
   fs.appendFileSync(filePath, message + "\n", "utf8");
-  console.log("::set-output name=check_created::true");
+
+  const outputFilePath = process.env.GITHUB_OUTPUT;
+  fs.appendFileSync(outputFilePath, "check_created=true\n");
 };
 
 const handleItems = async (
@@ -107,7 +107,7 @@ const handleItems = async (
 
         if (nameMismatch) {
           logMismatch(
-            `Album mismatch: ${albumData.name} is distinct of what was asked (${album.name})`
+            `Album mismatch: ${albumData.name} is distinct of what was asked, ${album.name}`
           );
           return null;
         }
