@@ -88,6 +88,7 @@ const searchAlbum = async (albumName: string) => {
 
 const logMismatch = (message: string) => {
   const filePath = "check.txt";
+  console.log(message)
   fs.appendFileSync(filePath, message + "\n", "utf8");
 };
 
