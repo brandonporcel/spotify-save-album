@@ -4,12 +4,8 @@ import fs from "fs";
 import { AlbumResponse, ParsedAlbum } from "./types/definitions";
 dotenv.config();
 
-const albums = [
-    "Yoko Ono - Fly (1971)",
-    "Yoko Ono - Approximately Infinite Universe (1973)",
-    "ooodisea - O' dimness SOUL HOME (2022)",
+const albums = [ 
     "OutKast - Speakerboxxx / The Love Below (2003)",
-    "Eddie Palmieri - Molasses (1967)"
 ];
 
 const parseAlbums = (album: string): ParsedAlbum => {
@@ -90,6 +86,7 @@ const logMismatch = (message: string) => {
   const filePath = "check.txt";
   console.log(message)
   fs.appendFileSync(filePath, message + "\n", "utf8");
+  console.log("::set-output name=check_created::true");
 };
 
 const handleItems = async (
