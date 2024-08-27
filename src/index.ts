@@ -4,7 +4,13 @@ import fs from "fs";
 import { AlbumResponse, ParsedAlbum } from "./types/definitions";
 dotenv.config();
 
-const albums = ["Natalia Lafourcade - De Todas las Flores (2022)"];
+const albums = [
+    "Yoko Ono - Fly (1971)",
+    "Yoko Ono - Approximately Infinite Universe (1973)",
+    "ooodisea - O' dimness SOUL HOME (2022)",
+    "OutKast - Speakerboxxx / The Love Below (2003)",
+    "Eddie Palmieri - Molasses (1967)"
+];
 
 const parseAlbums = (album: string): ParsedAlbum => {
   const yearMatch = album.match(/\((\d{4})\)$/);
