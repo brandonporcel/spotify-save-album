@@ -86,7 +86,11 @@ const logMismatch = (message: string) => {
   fs.appendFileSync(filePath, message + "\n", "utf8");
 
   const outputFilePath = process.env.GITHUB_OUTPUT;
-  fs.appendFileSync(outputFilePath, "check_created=true\n");
+  if (outputFilePath) {
+    fs.appendFileSync(outputFilePath, "check_created=true\n");
+  } else {
+    console.error("GITHUB_OUTPUT no está definido.");
+  }
 };
 
 const handleItems = async (
