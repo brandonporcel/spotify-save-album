@@ -29,3 +29,4 @@ const albums = [
 - Add verification that albums has been saved correctly
 - Complete types
 - Make guides explaining how get innerHTML from body for no devs.
+- Fix ghaction to push unsaved albumts txt

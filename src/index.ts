@@ -4,7 +4,18 @@ import fs from "fs";
 import { AlbumResponse, ParsedAlbum } from "./types/definitions";
 dotenv.config();
 
-const albums = ["OutKast - Speakerboxxx / The Love Below (2003)"];
+const albums = [
+  "Yoko Ono - Fly (1971)",
+  "Yoko Ono - Approximately Infinite Universe (1973)",
+  "ooodisea - O' dimness SOUL HOME (2022)",
+  "OutKast - Speakerboxxx/The Love Below (2003)",
+  "Eddie Palmieri - Molasses (1967)",
+  "Eddie Palmieri - Sentido (1973)",
+  "Eddie Palmieri - The Sun of Latin Music (1974)",
+  "Parquet Courts - Wide Awake (2018)",
+  "Pastoral - Humanos (1976)",
+  "Nathy Peluso - Esmeralda (2017)",
+];
 
 const parseAlbums = (album: string): ParsedAlbum => {
   const yearMatch = album.match(/\((\d{4})\)$/);
