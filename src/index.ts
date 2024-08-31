@@ -5,16 +5,18 @@ import { AlbumResponse, ParsedAlbum } from "./types/definitions";
 dotenv.config();
 
 const albums = [
-  "Yoko Ono - Fly (1971)",
-  "Yoko Ono - Approximately Infinite Universe (1973)",
-  "ooodisea - O' dimness SOUL HOME (2022)",
-  "OutKast - Speakerboxxx/The Love Below (2003)",
-  "Eddie Palmieri - Molasses (1967)",
-  "Eddie Palmieri - Sentido (1973)",
-  "Eddie Palmieri - The Sun of Latin Music (1974)",
-  "Parquet Courts - Wide Awake (2018)",
-  "Pastoral - Humanos (1976)",
-  "Nathy Peluso - Esmeralda (2017)",
+    "Nathy Peluso - Grasa (2024)",
+    "Pescado Rabioso - Desatormentándonos (1972)",
+    "Tito Puente & La Lupe - La exitante Lupe canta con el maestro Tito Puente / Tito Puente Swings, The Exciting Lupe Sings (1965)",
+    "Punto y Pacífico - Tierra en Trance (2021)",
+    "Pusha T - King Push: Darkest Before Dawn - The Prelude (2015)",
+    "Quinteto Real - Su majestad el Tango (1964)",
+    "Quinteto Real - Quinteto Real en Japón Vol.2 (1965)",
+    "S. Riquelme - El último 10 (2021)",
+    "Edmundo Rivero - Edmundo Rivero canta a Discépolo (1959)",
+    "Mala Rodríguez - Lujo ibérico (2000)",
+    "Mala Rodríguez - Alevosía (2003)",
+    "Mala Rodríguez - Bruja (2013)"
 ];
 
 const parseAlbums = (album: string): ParsedAlbum => {
