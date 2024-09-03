@@ -5,18 +5,16 @@ import { AlbumResponse, ParsedAlbum } from "./types/definitions";
 dotenv.config();
 
 const albums = [
-    "Nathy Peluso - Grasa (2024)",
-    "Pescado Rabioso - Desatormentándonos (1972)",
-    "Tito Puente & La Lupe - La exitante Lupe canta con el maestro Tito Puente / Tito Puente Swings, The Exciting Lupe Sings (1965)",
-    "Punto y Pacífico - Tierra en Trance (2021)",
-    "Pusha T - King Push: Darkest Before Dawn - The Prelude (2015)",
-    "Quinteto Real - Su majestad el Tango (1964)",
-    "Quinteto Real - Quinteto Real en Japón Vol.2 (1965)",
-    "S. Riquelme - El último 10 (2021)",
-    "Edmundo Rivero - Edmundo Rivero canta a Discépolo (1959)",
-    "Mala Rodríguez - Lujo ibérico (2000)",
-    "Mala Rodríguez - Alevosía (2003)",
-    "Mala Rodríguez - Bruja (2013)"
+    "Rotary Connection - Songs (1969)",
+    "Horacio Salgán - Horacio Salgán y su Orquesta Típica (1957)",
+    "Horacio Salgán y su Orquesta - Música japonesa en tiempo de Tango (1963)",
+    "Jonas Sanche - Verdades la voz de la avenida (2012)",
+    "Mongo Santamaría Orchestra - Mongo Introduces La Lupe (1963)",
+    "Santicuado.q - Arpegio (2022)",
+    "Sassyggirl - Intima (2021)",
+    "Sault - 5 (2019)",
+    "Sault - Untitled (Black Is) (2020)",
+    "shame - Drunk Tank Pink (2021)"
 ];
 
 const parseAlbums = (album: string): ParsedAlbum => {
