@@ -1,5 +1,7 @@
 # Save albums
 
+<i>[cta edit](https://github.com/brandonporcel/spotify-save-album/edit/main/src/index.ts)</i>
+
 little script that saves albums to own library
 works only for oneself, download the repository and get
 
