@@ -5,16 +5,18 @@ import { AlbumResponse, ParsedAlbum } from "./types/definitions";
 dotenv.config();
 
 const albums = [
-    "Rotary Connection - Songs (1969)",
-    "Horacio Salgán - Horacio Salgán y su Orquesta Típica (1957)",
-    "Horacio Salgán y su Orquesta - Música japonesa en tiempo de Tango (1963)",
-    "Jonas Sanche - Verdades la voz de la avenida (2012)",
-    "Mongo Santamaría Orchestra - Mongo Introduces La Lupe (1963)",
-    "Santicuado.q - Arpegio (2022)",
-    "Sassyggirl - Intima (2021)",
-    "Sault - 5 (2019)",
-    "Sault - Untitled (Black Is) (2020)",
-    "shame - Drunk Tank Pink (2021)"
+    "Shelley FKA DRAM - Shelley FKA DRAM (2021)",
+    "Sho-Hai - La Última Función (2017)",
+    "Sirio & Superior - Sons of Sybaris (2024)",
+    "Slave - Slave (1977)",
+    "Slave - Stone Jam (1980)",
+    "slowthai - TYRON (2021)",
+    "Sly & The Family Stone - A Whole New Thing (1967)",
+    "Soda Stereo - Nada personal (1985)",
+    "Julio Sosa - Así cantaba Julio Sosa (1965)",
+    "Natalia Spiner - Axis (2022)",
+    "Spinetta - A 18' del sol (1977)",
+    "Dante Spinetta - Mesa dulce (2022)"
 ];
 
 const parseAlbums = (album: string): ParsedAlbum => {
