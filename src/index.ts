@@ -5,18 +5,16 @@ import { AlbumResponse, ParsedAlbum } from "./types/definitions";
 dotenv.config();
 
 const albums = [
-    "Shelley FKA DRAM - Shelley FKA DRAM (2021)",
-    "Sho-Hai - La Última Función (2017)",
-    "Sirio & Superior - Sons of Sybaris (2024)",
-    "Slave - Slave (1977)",
-    "Slave - Stone Jam (1980)",
-    "slowthai - TYRON (2021)",
-    "Sly & The Family Stone - A Whole New Thing (1967)",
-    "Soda Stereo - Nada personal (1985)",
-    "Julio Sosa - Así cantaba Julio Sosa (1965)",
-    "Natalia Spiner - Axis (2022)",
-    "Spinetta - A 18' del sol (1977)",
-    "Dante Spinetta - Mesa dulce (2022)"
+    "Spinetta y los Socios del Desierto - Spinetta y los Socios del Desierto (1997)",
+    "Vince Staples - Summertime '06 (2015)",
+    "The Strokes - The New Abnormal (2020)",
+    "Sui Generis - Confesiones de invierno (1973)",
+    "Donna Summer - Once Upon a Time (1977)",
+    "Sylvester - All I Need (1982)",
+    "T&K - Writing Classics (2014)",
+    "T&K - El libro negro (2018)",
+    "T&K - Frío Espero (2021)",
+    "Elio Toffana - Serie 5 (2021)"
 ];
 
 const parseAlbums = (album: string): ParsedAlbum => {
