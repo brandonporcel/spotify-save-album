@@ -5,16 +5,20 @@ import { AlbumResponse, ParsedAlbum } from "./types/definitions";
 dotenv.config();
 
 const albums = [
-    "Spinetta y los Socios del Desierto - Spinetta y los Socios del Desierto (1997)",
-    "Vince Staples - Summertime '06 (2015)",
-    "The Strokes - The New Abnormal (2020)",
-    "Sui Generis - Confesiones de invierno (1973)",
-    "Donna Summer - Once Upon a Time (1977)",
-    "Sylvester - All I Need (1982)",
-    "T&K - Writing Classics (2014)",
-    "T&K - El libro negro (2018)",
-    "T&K - Frío Espero (2021)",
-    "Elio Toffana - Serie 5 (2021)"
+    "Too $hort - Born to Mack (1987)",
+    "Too $hort - Life Is... Too Short (1989)",
+    "Too $hort - Cocktails (1995)",
+    "ToteKing - Lebron (2018)",
+    "Tony Touch - The Piece Maker (2000)",
+    "Tyler, the Creator - Call Me If You Get Lost (2021)",
+    "Bobby Valentín - Algo nuevo / Something New (1970)",
+    "Varoner - Spectacular Raps (2019)",
+    "Viagra Boys - Street Worms (2018)",
+    "Rick Wakeman - The Six Wives of Henry VIII (1973)",
+    "Waralu - Las cosas que me destruyen (2022)",
+    "Barry White - Stone Gon' (1973)",
+    "Wiley - Playtime Is Over (2007)",
+    "YSY A - Antezana 247 (2018)"
 ];
 
 const parseAlbums = (album: string): ParsedAlbum => {
