@@ -4,21 +4,17 @@ import fs from "fs";
 import { AlbumResponse, ParsedAlbum } from "./types/definitions";
 dotenv.config();
 
-const albums = [
-    "Too $hort - Born to Mack (1987)",
-    "Too $hort - Life Is... Too Short (1989)",
-    "Too $hort - Cocktails (1995)",
-    "ToteKing - Lebron (2018)",
-    "Tony Touch - The Piece Maker (2000)",
-    "Tyler, the Creator - Call Me If You Get Lost (2021)",
-    "Bobby Valentín - Algo nuevo / Something New (1970)",
-    "Varoner - Spectacular Raps (2019)",
-    "Viagra Boys - Street Worms (2018)",
-    "Rick Wakeman - The Six Wives of Henry VIII (1973)",
-    "Waralu - Las cosas que me destruyen (2022)",
-    "Barry White - Stone Gon' (1973)",
-    "Wiley - Playtime Is Over (2007)",
-    "YSY A - Antezana 247 (2018)"
+const albums =[
+    "Charlotte Adigéry & Bolis Pupul - Topical Dancer (2022)",
+    "Almendra - Almendra (1969)",
+    "Álex Anwandter - El diablo en el cuerpo (2023)",
+    "Apache & Canserbero - Apa y Can (2013)",
+    "Armand Hammer & The Alchemist - Haram (2021)",
+    "Joey Bada$$ - All-Amerikkkan Bada$$ (2017)",
+    "Ray Barretto - Acid (1968)",
+    "Joe Bataan - Salsoul (1973)",
+    "Majid Bekkas, Goran Kajfeš, Jesper Nordenström & Stefan Pasborg - Magic Spirit Quartet (2020)",
+    "Big Pun - Capital Punishment (1998)"
 ];
 
 const parseAlbums = (album: string): ParsedAlbum => {
