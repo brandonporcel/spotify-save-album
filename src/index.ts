@@ -5,16 +5,20 @@ import { AlbumResponse, ParsedAlbum } from "./types/definitions";
 dotenv.config();
 
 const albums =[
-    "Charlotte Adigéry & Bolis Pupul - Topical Dancer (2022)",
-    "Almendra - Almendra (1969)",
-    "Álex Anwandter - El diablo en el cuerpo (2023)",
-    "Apache & Canserbero - Apa y Can (2013)",
-    "Armand Hammer & The Alchemist - Haram (2021)",
-    "Joey Bada$$ - All-Amerikkkan Bada$$ (2017)",
-    "Ray Barretto - Acid (1968)",
-    "Joe Bataan - Salsoul (1973)",
-    "Majid Bekkas, Goran Kajfeš, Jesper Nordenström & Stefan Pasborg - Magic Spirit Quartet (2020)",
-    "Big Pun - Capital Punishment (1998)"
+    "black midi - Schlagenheim (2019)",
+    "Blondie - Blondie (1976)",
+    "Bronko Yotte - Gala (2015)",
+    "James Brown - It's a Mother (1969)",
+    "James Brown and The Famous Flames - I Can't Stand Myself When You Touch Me (1968)",
+    "Cruz Cafuné - Me muevo con Dios (2023)",
+    "Miguel Cantilo y Grupo Sur - Miguel Cantilo y Grupo Sur (1975)",
+    "Can + Zoo - Indigos (2008)",
+    "Charli XCX - How I'm Feeling Now (2020)",
+    "Willie Colón - The Hustler (1968)",
+    "Willie Colón - El juicio (1972)",
+    "Conway - Reject 2 (2015)",
+    "Conway the Machine - From King to a GOD (2020)",
+    "Conway the Machine - God Don't Make Mistakes (2022)"
 ];
 
 const parseAlbums = (album: string): ParsedAlbum => {
