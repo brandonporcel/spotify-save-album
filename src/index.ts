@@ -5,20 +5,16 @@ import { AlbumResponse, ParsedAlbum } from "./types/definitions";
 dotenv.config();
 
 const albums =[
-    "black midi - Schlagenheim (2019)",
-    "Blondie - Blondie (1976)",
-    "Bronko Yotte - Gala (2015)",
-    "James Brown - It's a Mother (1969)",
-    "James Brown and The Famous Flames - I Can't Stand Myself When You Touch Me (1968)",
-    "Cruz Cafuné - Me muevo con Dios (2023)",
-    "Miguel Cantilo y Grupo Sur - Miguel Cantilo y Grupo Sur (1975)",
-    "Can + Zoo - Indigos (2008)",
-    "Charli XCX - How I'm Feeling Now (2020)",
-    "Willie Colón - The Hustler (1968)",
-    "Willie Colón - El juicio (1972)",
-    "Conway - Reject 2 (2015)",
-    "Conway the Machine - From King to a GOD (2020)",
-    "Conway the Machine - God Don't Make Mistakes (2022)"
+    "Chick Corea - My Spanish Heart (1976)",
+    "Jorge Dalto - Chevere (1976)",
+    "Betty Davis - Betty Davis (1973)",
+    "Betty Davis - They Say I'm Different (1974)",
+    "Betty Davis - Nasty Gal (1975)",
+    "Dead Prez - Lets Get Free (2000)",
+    "The Delfonics - The Delfonics (1970)",
+    "Lana Del Rey - Norman Fucking Rockwell! (2019)",
+    "Devo - Freedom of Choice (1980)",
+    "Diamond and The Psychotic Neurotics - Stunts, Blunts & Hip Hop (1992)"
 ];
 
 const parseAlbums = (album: string): ParsedAlbum => {
