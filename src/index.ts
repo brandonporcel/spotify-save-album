@@ -5,16 +5,20 @@ import { AlbumResponse, ParsedAlbum } from "./types/definitions";
 dotenv.config();
 
 const albums =[
-    "Chick Corea - My Spanish Heart (1976)",
-    "Jorge Dalto - Chevere (1976)",
-    "Betty Davis - Betty Davis (1973)",
-    "Betty Davis - They Say I'm Different (1974)",
-    "Betty Davis - Nasty Gal (1975)",
-    "Dead Prez - Lets Get Free (2000)",
-    "The Delfonics - The Delfonics (1970)",
-    "Lana Del Rey - Norman Fucking Rockwell! (2019)",
-    "Devo - Freedom of Choice (1980)",
-    "Diamond and The Psychotic Neurotics - Stunts, Blunts & Hip Hop (1992)"
+    "The D.O.C. - No One Can Do It Better (1989)",
+    "E-40 - The Element of Surprise (1998)",
+    "Four Tops - Second Album (1965)",
+    "Ana Frango Elétrico - Little Electric Chicken Heart (2019)",
+    "Aretha Franklin - Soul '69 (1969)",
+    "Frente Cumbiero - Cera perdida (2020)",
+    "Gabriela - Gabriela (1972)",
+    "Nubya Garcia - Source (2020)",
+    "Taana Gardner - Taana Gardner (1979)",
+    "Geto Boys - We Can't Be Stopped (1991)",
+    "N. Hardem - Mal de altura (2024)",
+    "N. Hardem & Las Hermanas - Rhodesia (2018)",
+    "Illya Kuryaki & the Valderramas - Leche (1999)",
+    "Boldy James & Sterling Toles - Manger on McNichols (2020)"
 ];
 
 const parseAlbums = (album: string): ParsedAlbum => {
