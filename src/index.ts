@@ -5,16 +5,20 @@ import { AlbumResponse, ParsedAlbum } from "./types/definitions";
 dotenv.config();
 
 const albums =[
-    "Grace Jones - Nightclubbing (1981)",
-    "Quincy Jones - The Dude (1981)",
-    "K4 - K4 (2021)",
-    "The Kinks - Face to Face (1966)",
-    "The Kinks - Something Else by The Kinks (1967)",
-    "Kendrick Lamar - DAMN. (2017)",
-    "La Piba Berreta - Un Dios Nuevo (2023)",
-    "Julieta Laso - Cabeza Negra (2022)",
-    "Lil Supa - Yeyo (2022)",
-    "Lingua Ignota - Caligula (2019)"
+    "L.L. Cool J - Radio (1985)",
+    "Lolabúm - Verte antes de fin de año (2020)",
+    "Lupe Fiasco - Lupe Fiasco's The Cool (2007)",
+    "Grande Mahogany - As Grande As (2024)",
+    "Roc Marciano & The Alchemist - The Elephant Man's Bones (2022)",
+    "Rodolfo Mederos - Buenas noches, Paula (1983)",
+    "Melingo - Oasis (2020)",
+    "Harold Melvin & The Blue Notes - Wake Up Everybody (1975)",
+    "Nico Miseria - Tercer verano del amor (2021)",
+    "Moris - Treinta minutos de vida (1970)",
+    "Thiago Nassif - Mente (2020)",
+    "nn.carvalho - Problemática del jacarandá (2022)",
+    "Nnux - Ciudad (2020)",
+    "No Rules Clan - Pantone (2019)"
 ];
 
 const parseAlbums = (album: string): ParsedAlbum => {
