@@ -5,20 +5,16 @@ import { AlbumResponse, ParsedAlbum } from "./types/definitions";
 dotenv.config();
 
 const albums =[
-    "L.L. Cool J - Radio (1985)",
-    "Lolabúm - Verte antes de fin de año (2020)",
-    "Lupe Fiasco - Lupe Fiasco's The Cool (2007)",
-    "Grande Mahogany - As Grande As (2024)",
-    "Roc Marciano & The Alchemist - The Elephant Man's Bones (2022)",
-    "Rodolfo Mederos - Buenas noches, Paula (1983)",
-    "Melingo - Oasis (2020)",
-    "Harold Melvin & The Blue Notes - Wake Up Everybody (1975)",
-    "Nico Miseria - Tercer verano del amor (2021)",
-    "Moris - Treinta minutos de vida (1970)",
-    "Thiago Nassif - Mente (2020)",
-    "nn.carvalho - Problemática del jacarandá (2022)",
-    "Nnux - Ciudad (2020)",
-    "No Rules Clan - Pantone (2019)"
+    "Nylon - El ciudadano (1983)",
+    "O.L.I.V.I.A - 4k (2020)",
+    "Orchestra Harlow - Salsa (1973)",
+    "Eddie Palmieri - Vámonos pa'l monte (1971)",
+    "Eddie Palmieri - Lucumí, Macumba, Voodoo (1978)",
+    "Lucy Patané - Lucy Patané (2019)",
+    "Lido Pimienta - Miss Colombia (2020)",
+    "Caroline Polachek - Pang (2019)",
+    "Porridge Radio - Every Bad (2020)",
+    "Premiata Forneria Marconi - Per un amico (1972)"
 ];
 
 const parseAlbums = (album: string): ParsedAlbum => {
