@@ -5,16 +5,21 @@ import { AlbumResponse, ParsedAlbum } from "./types/definitions";
 dotenv.config();
 
 const albums =[
-    "Nylon - El ciudadano (1983)",
-    "O.L.I.V.I.A - 4k (2020)",
-    "Orchestra Harlow - Salsa (1973)",
-    "Eddie Palmieri - Vámonos pa'l monte (1971)",
-    "Eddie Palmieri - Lucumí, Macumba, Voodoo (1978)",
-    "Lucy Patané - Lucy Patané (2019)",
-    "Lido Pimienta - Miss Colombia (2020)",
-    "Caroline Polachek - Pang (2019)",
-    "Porridge Radio - Every Bad (2020)",
-    "Premiata Forneria Marconi - Per un amico (1972)"
+    "Los Prisioneros - La voz de los '80 (1984)",
+    "Proyecto Gomez Casa - Luz (2019)",
+    "Pusha T - It's Almost Dry (2022)",
+    "Quinteto Real - Quinteto Real en Japón Vol.1 (1965)",
+    "Redman - Whut? Thee Album (1992)",
+    "Rei All'a & Uzetaele - Back in the Days (2014)",
+    "Horacio Salgán - Presente y futuro de Tango (1964)",
+    "Santoz - Hiperbórea (2022)",
+    "Saramalacara - Heráldica (2024)",
+    "LISA SCHA - POSESA (2023)",
+    "Diego Schissi Quinteto - Tongos (2011)",
+    "Diego Schissi Quinteto - Te (2021)",
+    "Seatbelts - Cowboy Bebop (1998)",
+    "Los Shakers - La conferencia secreta del Toto's Bar (1968)",
+    "Sirio & Irivrte - Cadillac One (2024)"
 ];
 
 const parseAlbums = (album: string): ParsedAlbum => {
