@@ -5,21 +5,17 @@ import { AlbumResponse, ParsedAlbum } from "./types/definitions";
 dotenv.config();
 
 const albums =[
-    "Los Prisioneros - La voz de los '80 (1984)",
-    "Proyecto Gomez Casa - Luz (2019)",
-    "Pusha T - It's Almost Dry (2022)",
-    "Quinteto Real - Quinteto Real en Japón Vol.1 (1965)",
-    "Redman - Whut? Thee Album (1992)",
-    "Rei All'a & Uzetaele - Back in the Days (2014)",
-    "Horacio Salgán - Presente y futuro de Tango (1964)",
-    "Santoz - Hiperbórea (2022)",
-    "Saramalacara - Heráldica (2024)",
-    "LISA SCHA - POSESA (2023)",
-    "Diego Schissi Quinteto - Tongos (2011)",
-    "Diego Schissi Quinteto - Te (2021)",
-    "Seatbelts - Cowboy Bebop (1998)",
-    "Los Shakers - La conferencia secreta del Toto's Bar (1968)",
-    "Sirio & Irivrte - Cadillac One (2024)"
+    "slowthai - Nothing Great About Britain (2019)",
+    "Soda Stereo - Signos (1986)",
+    "SOPHIE - OIL OF EVERY PEARL'S UN-INSIDES (2018)",
+    "Julio Sosa - El varón del Tango (1961)",
+    "Julio Sosa - El Tango lo siento así (1962)",
+    "Special Interest - The Passion Of (2020)",
+    "Squid - Bright Green Field (2021)",
+    "Vince Staples - Big Fish Theory (2017)",
+    "Too $hort - Short Dog's in the House (1990)",
+    "A Tribe Called Quest - People's Instinctive Travels and the Paths of Rhythm (1990)",
+    "Los Twist - La dicha en movimiento (1983)"
 ];
 
 const parseAlbums = (album: string): ParsedAlbum => {
