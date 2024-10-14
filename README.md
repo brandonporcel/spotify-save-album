@@ -32,3 +32,4 @@ const albums = [
 - Complete types
 - Make guides explaining how get innerHTML from body for no devs.
 - Fix ghaction to push unsaved albumts txt
+- Escapar las tildes de los títulos en la validación
