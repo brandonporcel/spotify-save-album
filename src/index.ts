@@ -5,17 +5,20 @@ import { AlbumResponse, ParsedAlbum } from "./types/definitions";
 dotenv.config();
 
 const albums =[
-    "slowthai - Nothing Great About Britain (2019)",
-    "Soda Stereo - Signos (1986)",
-    "SOPHIE - OIL OF EVERY PEARL'S UN-INSIDES (2018)",
-    "Julio Sosa - El varón del Tango (1961)",
-    "Julio Sosa - El Tango lo siento así (1962)",
-    "Special Interest - The Passion Of (2020)",
-    "Squid - Bright Green Field (2021)",
-    "Vince Staples - Big Fish Theory (2017)",
-    "Too $hort - Short Dog's in the House (1990)",
-    "A Tribe Called Quest - People's Instinctive Travels and the Paths of Rhythm (1990)",
-    "Los Twist - La dicha en movimiento (1983)"
+    "Vampire Weekend - Vampire Weekend (2008)",
+    "Vampire Weekend - Contra (2010)",
+    "Vampire Weekend - Modern Vampires of the City (2013)",
+    "Varoner & Irivrte - Fiebre de Oro: Aurum (2024)",
+    "Vico C - Aquel que había muerto (1998)",
+    "Vico C - En honor a la verdad (2003)",
+    "Violadores del Verso - Genios (1999)",
+    "Virus - Relax (1984)",
+    "Kanye West - Late Registration (2005)",
+    "Kanye West - My Beautiful Dark Twisted Fantasy (2010)",
+    "Jack White - Fear of the Dawn (2022)",
+    "The Who - My Generation (1965)",
+    "The Who - The Who Sell Out (1967)",
+    "billy woods & Kenny Segal - Maps (2023)"
 ];
 
 const parseAlbums = (album: string): ParsedAlbum => {
