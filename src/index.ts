@@ -5,20 +5,20 @@ import { AlbumResponse, ParsedAlbum } from "./types/definitions";
 dotenv.config();
 
 const albums =[
-    "Vampire Weekend - Vampire Weekend (2008)",
-    "Vampire Weekend - Contra (2010)",
-    "Vampire Weekend - Modern Vampires of the City (2013)",
-    "Varoner & Irivrte - Fiebre de Oro: Aurum (2024)",
-    "Vico C - Aquel que había muerto (1998)",
-    "Vico C - En honor a la verdad (2003)",
-    "Violadores del Verso - Genios (1999)",
-    "Virus - Relax (1984)",
-    "Kanye West - Late Registration (2005)",
-    "Kanye West - My Beautiful Dark Twisted Fantasy (2010)",
-    "Jack White - Fear of the Dawn (2022)",
-    "The Who - My Generation (1965)",
-    "The Who - The Who Sell Out (1967)",
-    "billy woods & Kenny Segal - Maps (2023)"
+    "2Pac - All Eyez on Me (1996)",
+    "7 Notas 7 Colores - Hecho, es simple (1997)",
+    "Miguel Abuelo & Nada - Miguel Abuelo & Nada (1975)",
+    "AKRIILA - epistolares (2024)",
+    "AlcolirykoZ - Servicios ambulatorioz (2017)",
+    "Maria Arnal i Marcel Bagés - Clamor (2021)",
+    "Beyoncé - Renaissance (2022)",
+    "Black Country, New Road - Ants From Up There (2022)",
+    "Black Star - Mos Def & Talib Kweli Are Black Star (1998)",
+    "Canserbero - Muerte (2012)",
+    "Clipse - Hell Hath No Fury (2006)",
+    "Feli Colina - El valle encantado (2022)",
+    "Willie Colón, canta: Héctor Lavoe - Lo mato (1973)",
+    "Denzel Curry - Melt My Eyez See Your Future (2022)"
 ];
 
 const parseAlbums = (album: string): ParsedAlbum => {
