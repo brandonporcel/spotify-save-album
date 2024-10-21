@@ -5,20 +5,20 @@ import { AlbumResponse, ParsedAlbum } from "./types/definitions";
 dotenv.config();
 
 const albums =[
-    "2Pac - All Eyez on Me (1996)",
-    "7 Notas 7 Colores - Hecho, es simple (1997)",
-    "Miguel Abuelo & Nada - Miguel Abuelo & Nada (1975)",
-    "AKRIILA - epistolares (2024)",
-    "AlcolirykoZ - Servicios ambulatorioz (2017)",
-    "Maria Arnal i Marcel Bagés - Clamor (2021)",
-    "Beyoncé - Renaissance (2022)",
-    "Black Country, New Road - Ants From Up There (2022)",
-    "Black Star - Mos Def & Talib Kweli Are Black Star (1998)",
-    "Canserbero - Muerte (2012)",
-    "Clipse - Hell Hath No Fury (2006)",
     "Feli Colina - El valle encantado (2022)",
     "Willie Colón, canta: Héctor Lavoe - Lo mato (1973)",
-    "Denzel Curry - Melt My Eyez See Your Future (2022)"
+    "Denzel Curry - Melt My Eyez See Your Future (2022)",
+    "Dano - Istmo (2019)",
+    "Dano & $kyhook - Braille (2017)",
+    "Devo - Q: Are We Not Men? A: We Are Devo! (1978)",
+    "Missy Elliott - Miss E ...So Addictive (2001)",
+    "Flat Erik - Neovalladolor (2020)",
+    "Marvin Gaye - What's Going On (1971)",
+    "Juan Gelman & Juan Cedrón - Madrugada (1964)",
+    "Golden Boyz - Tesoros en la Tundra: ODISEA (I/III) (2022)",
+    "Golden Boyz - Tesoros en la Tundra: SERENDIPIA (II/III) (2022)",
+    "Golden Boyz - Tesoros en la Tundra: ÉXTASIS (III/III) (2022)",
+    "N. Hardem - Verdor (2021)"
 ];
 
 const parseAlbums = (album: string): ParsedAlbum => {
