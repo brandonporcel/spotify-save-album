@@ -5,20 +5,17 @@ import { AlbumResponse, ParsedAlbum } from "./types/definitions";
 dotenv.config();
 
 const albums =[
-    "Feli Colina - El valle encantado (2022)",
-    "Willie Colón, canta: Héctor Lavoe - Lo mato (1973)",
-    "Denzel Curry - Melt My Eyez See Your Future (2022)",
-    "Dano - Istmo (2019)",
-    "Dano & $kyhook - Braille (2017)",
-    "Devo - Q: Are We Not Men? A: We Are Devo! (1978)",
-    "Missy Elliott - Miss E ...So Addictive (2001)",
-    "Flat Erik - Neovalladolor (2020)",
-    "Marvin Gaye - What's Going On (1971)",
-    "Juan Gelman & Juan Cedrón - Madrugada (1964)",
-    "Golden Boyz - Tesoros en la Tundra: ODISEA (I/III) (2022)",
-    "Golden Boyz - Tesoros en la Tundra: SERENDIPIA (II/III) (2022)",
-    "Golden Boyz - Tesoros en la Tundra: ÉXTASIS (III/III) (2022)",
-    "N. Hardem - Verdor (2021)"
+    "Lauryn Hill - The Miseducation of Lauryn Hill (1998)",
+    "Hoke & Louis Amoeba - BBO (2022)",
+    "Invisible - El jardín de los presentes (1976)",
+    "Kase.O - El círculo (2016)",
+    "Kase.O Jazz Magnetism - Kase.O Jazz Magnetism (2011)",
+    "KIDS SEE GHOSTS - KIDS SEE GHOSTS (2018)",
+    "Kendrick Lamar - To Pimp a Butterfly (2015)",
+    "Kendrick Lamar - Mr. Morale & The Big Steppers (2022)",
+    "Lil Supa - SERIO (2017)",
+    "Lupe Fiasco - Lupe Fiasco's Food & Liquor (2006)",
+    "Manal - Manal (1970)"
 ];
 
 const parseAlbums = (album: string): ParsedAlbum => {
