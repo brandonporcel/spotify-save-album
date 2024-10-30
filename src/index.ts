@@ -5,17 +5,20 @@ import { AlbumResponse, ParsedAlbum } from "./types/definitions";
 dotenv.config();
 
 const albums =[
-    "Lauryn Hill - The Miseducation of Lauryn Hill (1998)",
-    "Hoke & Louis Amoeba - BBO (2022)",
-    "Invisible - El jardín de los presentes (1976)",
-    "Kase.O - El círculo (2016)",
-    "Kase.O Jazz Magnetism - Kase.O Jazz Magnetism (2011)",
-    "KIDS SEE GHOSTS - KIDS SEE GHOSTS (2018)",
-    "Kendrick Lamar - To Pimp a Butterfly (2015)",
-    "Kendrick Lamar - Mr. Morale & The Big Steppers (2022)",
-    "Lil Supa - SERIO (2017)",
-    "Lupe Fiasco - Lupe Fiasco's Food & Liquor (2006)",
-    "Manal - Manal (1970)"
+    "Roc Marciano - Reloaded (2012)",
+    "Rodolfo Mederos Generación Cero - De todas maneras (1977)",
+    "Mir Nicolás - SP.I. (2024)",
+    "Nico Miseria - El periplo del héroe (2023)",
+    "Nas - Illmatic (1994)",
+    "Nas - It Was Written (1996)",
+    "The Notorious B.I.G. - Ready to Die (1994)",
+    "N.W.A - Straight Outta Compton (1989)",
+    "N-Wise Allah - Casino Chips (2017)",
+    "Odisea - Odisea (2010)",
+    "Orion XL - Kaos & Armonía (2016)",
+    "OutKast - Stankonia (2000)",
+    "Pescado Rabioso - Pescado 2 (1973)",
+    "Pescado Rabioso - Artaud (1973)"
 ];
 
 const parseAlbums = (album: string): ParsedAlbum => {
