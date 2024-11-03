@@ -5,20 +5,17 @@ import { AlbumResponse, ParsedAlbum } from "./types/definitions";
 dotenv.config();
 
 const albums =[
-    "Roc Marciano - Reloaded (2012)",
-    "Rodolfo Mederos Generación Cero - De todas maneras (1977)",
-    "Mir Nicolás - SP.I. (2024)",
-    "Nico Miseria - El periplo del héroe (2023)",
-    "Nas - Illmatic (1994)",
-    "Nas - It Was Written (1996)",
-    "The Notorious B.I.G. - Ready to Die (1994)",
-    "N.W.A - Straight Outta Compton (1989)",
-    "N-Wise Allah - Casino Chips (2017)",
-    "Odisea - Odisea (2010)",
-    "Orion XL - Kaos & Armonía (2016)",
-    "OutKast - Stankonia (2000)",
-    "Pescado Rabioso - Pescado 2 (1973)",
-    "Pescado Rabioso - Artaud (1973)"
+    "Pink Floyd - The Dark Side of the Moon (1973)",
+    "Caroline Polachek - Desire, I Want to Turn Into You (2023)",
+    "Pusha T - DAYTONA (2018)",
+    "Quinteto Real - Quinteto Real (1960)",
+    "Redman - Dare Iz a Darkside (1994)",
+    "The Roots - Illadelph Halflife (1996)",
+    "Rosalía - El mal querer (2018)",
+    "Rosalía - MOTOMAMI (2022)",
+    "Sex Pistols - Never Mind the Bollocks Here's the Sex Pistols (1977)",
+    "Spinetta - Para los árboles (2003)",
+    "Sui Generis - Pequeñas anécdotas sobre las instituciones (1974)"
 ];
 
 const parseAlbums = (album: string): ParsedAlbum => {
