@@ -5,17 +5,18 @@ import { AlbumResponse, ParsedAlbum } from "./types/definitions";
 dotenv.config();
 
 const albums =[
-    "Pink Floyd - The Dark Side of the Moon (1973)",
-    "Caroline Polachek - Desire, I Want to Turn Into You (2023)",
-    "Pusha T - DAYTONA (2018)",
-    "Quinteto Real - Quinteto Real (1960)",
-    "Redman - Dare Iz a Darkside (1994)",
-    "The Roots - Illadelph Halflife (1996)",
-    "Rosalía - El mal querer (2018)",
-    "Rosalía - MOTOMAMI (2022)",
-    "Sex Pistols - Never Mind the Bollocks Here's the Sex Pistols (1977)",
-    "Spinetta - Para los árboles (2003)",
-    "Sui Generis - Pequeñas anécdotas sobre las instituciones (1974)"
+    "Taichu - RAWR (2023)",
+    "T&K - 1993: The Lost Tapes (2017)",
+    "A Tribe Called Quest - The Low End Theory (1991)",
+    "A Tribe Called Quest - Midnight Marauders (1993)",
+    "Tyler, the Creator - Flower Boy (2017)",
+    "Tyler, the Creator - Igor (2019)",
+    "Vox Dei - La Biblia (1971)",
+    "Jessie Ware - What's Your Pleasure? (2020)",
+    "Kanye West - The College Dropout (2004)",
+    "The Who - Tommy (1969)",
+    "Wu-Tang Clan - Enter the Wu-Tang (36 Chambers) (1993)",
+    "The Zombies - Odessey and Oracle (1968)"
 ];
 
 const parseAlbums = (album: string): ParsedAlbum => {
