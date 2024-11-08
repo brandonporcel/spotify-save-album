@@ -4,20 +4,7 @@ import fs from "fs";
 import { AlbumResponse, ParsedAlbum } from "./types/definitions";
 dotenv.config();
 
-const albums =[
-    "Taichu - RAWR (2023)",
-    "T&K - 1993: The Lost Tapes (2017)",
-    "A Tribe Called Quest - The Low End Theory (1991)",
-    "A Tribe Called Quest - Midnight Marauders (1993)",
-    "Tyler, the Creator - Flower Boy (2017)",
-    "Tyler, the Creator - Igor (2019)",
-    "Vox Dei - La Biblia (1971)",
-    "Jessie Ware - What's Your Pleasure? (2020)",
-    "Kanye West - The College Dropout (2004)",
-    "The Who - Tommy (1969)",
-    "Wu-Tang Clan - Enter the Wu-Tang (36 Chambers) (1993)",
-    "The Zombies - Odessey and Oracle (1968)"
-];
+const albums =[];
 
 const parseAlbums = (album: string): ParsedAlbum => {
   const yearMatch = album.match(/\((\d{4})\)$/);
