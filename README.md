@@ -1,21 +1,44 @@
-# Save albums
+# Save Albums
 
-<i>[cta edit](https://github.com/brandonporcel/spotify-save-album/edit/main/src/index.ts)</i>
+A small script to save albums to your personal Spotify library. This project is designed for individual use and makes it easy to automate adding albums to your Spotify library.
 
-little script that saves albums to own library
-works only for oneself, download the repository and get
+## ![image](https://github.com/user-attachments/assets/f4e83148-a018-43cc-ab59-7cf243a64a30)
 
-![image](https://github.com/user-attachments/assets/f4e83148-a018-43cc-ab59-7cf243a64a30)
+## 📦 Installation
 
-## instalation
+### 1. **Create an app on Spotify Dashboard**
 
-- create app in spotify developer dashboard
-- get client id & client secret
-- follow spotify demo example to get a refresh token that doesnt expire [/spotify/web-api-examples](https://github.com/spotify/web-api-examples). go to /authorization/authorization_code
-- set .env vars
-- `npm i` && set albums to save && `npm run dev`
+Go to the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/) and create a new app to obtain your **Client ID** and **Client Secret**.
 
-#### example albums list
+### 2. **Get a refresh token**
+
+Follow the [Spotify official example](https://github.com/spotify/web-api-examples) to generate a refresh token that doesn’t expire:
+
+- Navigate to the `/authorization/authorization_code` folder in the example.
+- Complete the flow to get a token and save it for use in this project.
+
+### 3. **Set up environment variables**
+
+Create a `.env` file in the project root directory with the following content:
+
+```env
+CLIENT_ID=your_client_id
+CLIENT_SECRET=your_client_secret
+REFRESH_TOKEN=your_refresh_token
+REDIRECT_URI=http://localhost:8888/callback
+```
+
+### 4. **Install dependencies**
+
+Run the following command to install the project dependencies:
+
+```bash
+npm install
+```
+
+### 5. **Set the list of albums**
+
+Edit the configuration file to add the albums you want to save:
 
 ```js
 const albums = [
@@ -24,12 +47,25 @@ const albums = [
 ];
 ```
 
-### TODO
+### 6. **Run index**
 
-- UI (simple input and button)
-- Add console logs to keep user updated
-- Add verification that albums has been saved correctly
-- Complete types
-- Make guides explaining how get innerHTML from body for no devs.
-- Fix ghaction to push unsaved albumts txt
-- Escapar las tildes de los títulos en la validación
+```js
+npm run dev
+```
+
+## 📋 TODO List
+
+- [ ] UI (User Interface): Add an input field and a button for easier album entry.
+- [ ] Validation: Ensure albums are saved correctly.
+- [ ] Guides: Create guides for non-developers explaining how to extract innerHTML from a webpage.
+- [ ] GitHub Action: Fix the action to upload a .txt file with unsaved albums.
+- [ ] Add multi-language support for prompts (EN)
+
+#### 🛠️ Technologies Used
+
+- Node js
+- Spotify Web API SDK
+
+## 📝 Feedback
+
+I’d love to hear your thoughts! Contact me via [mail](mailto:brandon7.7porcel@gmail.com) or [linkedin](https://www.linkedin.com/in/brandonporcel/)
