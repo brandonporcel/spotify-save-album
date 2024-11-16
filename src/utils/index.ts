@@ -5,7 +5,7 @@ export const generateRandomString = (length: number) =>
 
 export const parseAlbums = (album: string) => {
   const yearMatch = album.match(/\((\d{4})\)$/);
-  const year = yearMatch ? yearMatch[1] : "Unknown";
+  const year = yearMatch ? yearMatch[1] : "";
   const nameWithoutYear = album.replace(/\s*\(\d{4}\)$/, "").trim();
   const [artist, name] = nameWithoutYear.split(" - ");
 
