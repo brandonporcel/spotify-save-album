@@ -24,7 +24,7 @@ const handleItems = async (parsedAlbums: ParsedAlbum[]) => {
           .toLowerCase()
           .normalize("NFD")
           .replace(/[\u0300-\u036f]/g, "");
-        const albumAskedName = album.name
+        const albumAskedName = albumData.name
           .toLowerCase()
           .normalize("NFD")
           .replace(/[\u0300-\u036f]/g, "");
