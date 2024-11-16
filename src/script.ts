@@ -3,7 +3,18 @@ import axios from "axios";
 import { AlbumResponse, ParsedAlbum } from "./types/definitions";
 dotenv.config();
 
-const albums: string[] = [];
+const albums: string[] = [
+    "El último trago - Buika & Chucho Valdés",
+    "A mi amor... con mi amor - Armando Manzanero",
+    "Canciones del corazon - Trío Los Panchos",
+    "Tributo al Cuarteto Patria - Eliades Ochoa y el Cuarteto Patria",
+    "Las flores de la vida - Compay Segundo",
+    "Queen of Latin Soul / Reina de la canción latina - La Lupe",
+    "Grandes Éxitos Del Boleroglam, Vol. 1 - Daniel, me estás matando",
+    "Sonora Santanera: Canta Sonia Lopez - Sonora Santanera",
+    "Arriesgaré la piel - Inti-Illimani",
+    "Sings Spanish and Latin American Favorites - Connie Francis"
+];
 
 const parseAlbums = (album: string): ParsedAlbum => {
   const yearMatch = album.match(/\((\d{4})\)$/);
