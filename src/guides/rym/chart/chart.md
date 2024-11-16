@@ -51,5 +51,6 @@ const titles = Array.from(albums).map((el) =>
 // Extrae los últimos 10 títulos del array
 titles.slice(-10);
 ```
+[cta edit](https://github.com/brandonporcel/spotify-save-album/edit/main/src/script.ts)
 
 ![rym list](1.png)
