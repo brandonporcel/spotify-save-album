@@ -3,7 +3,18 @@ import axios from "axios";
 import { AlbumResponse, ParsedAlbum } from "./types/definitions";
 dotenv.config();
 
-const albums: string[] = [];
+const albums: string[] = [
+    "Segundo romance - Luis Miguel",
+    "Mi sueño - Ibrahim Ferrer",
+    "La voz del sentimiento - Freddy",
+    "A mis amigos - Nat King Cole",
+    "More Amor - Eydie Gormé & the Trío Los Panchos",
+    "Lo mejor de la vida - Compay Segundo",
+    "Álvaro Carrillo interpreta las canciones de Álvaro Carrillo - Álvaro Carrillo",
+    "Flor de amor - Omara Portuondo",
+    "Los boleros al estilo de bossanova (Romance latino Vol. 1) - Lisa Ono",
+  "Compay Segundo - Calle Salud"
+];
 
 const parseAlbums = (album: string): ParsedAlbum => {
   const yearMatch = album.match(/\((\d{4})\)$/);
