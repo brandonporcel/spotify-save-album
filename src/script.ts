@@ -3,17 +3,17 @@ import axios from "axios";
 import { AlbumResponse, ParsedAlbum } from "./types/definitions";
 dotenv.config();
 
-const albums: string[] = [
-    "Segundo romance - Luis Miguel",
-    "Mi sueño - Ibrahim Ferrer",
-    "La voz del sentimiento - Freddy",
-    "A mis amigos - Nat King Cole",
-    "More Amor - Eydie Gormé & the Trío Los Panchos",
-    "Lo mejor de la vida - Compay Segundo",
-    "Álvaro Carrillo interpreta las canciones de Álvaro Carrillo - Álvaro Carrillo",
-    "Flor de amor - Omara Portuondo",
-    "Los boleros al estilo de bossanova (Romance latino Vol. 1) - Lisa Ono",
-  "Compay Segundo - Calle Salud"
+const albums: string[] =[
+    "Un canto por México vol. 2 - Natalia Lafourcade",
+    "Mujer divina: Homenaje a Agustín Lara - Natalia Lafourcade",
+    "Mi tierra - Gloria Estefan",
+    "Noches De Salón - Enjambre",
+    "Cheo - Cheo Feliciano",
+    "Suspiros - Daniel, me estás matando",
+    "Cole Español - Nat \"King\" Cole",
+    "Cosas de enamorados - Juan Gabriel",
+    "Romances - Luis Miguel",
+    "Calle Salud - Compay Segundo"
 ];
 
 const parseAlbums = (album: string): ParsedAlbum => {
