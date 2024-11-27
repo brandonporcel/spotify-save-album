@@ -4,16 +4,16 @@ import { AlbumResponse, ParsedAlbum } from "./types/definitions";
 dotenv.config();
 
 const albums: string[] =[
-    "Un canto por México vol. 2 - Natalia Lafourcade",
-    "Mujer divina: Homenaje a Agustín Lara - Natalia Lafourcade",
-    "Mi tierra - Gloria Estefan",
-    "Noches De Salón - Enjambre",
-    "Cheo - Cheo Feliciano",
-    "Suspiros - Daniel, me estás matando",
-    "Cole Español - Nat \"King\" Cole",
-    "Cosas de enamorados - Juan Gabriel",
-    "Romances - Luis Miguel",
-    "Calle Salud - Compay Segundo"
+    "Buena Vista Social Club - Buena Vista Social Club",
+    "100% Lúcidos - Macha y El Bloque Depresivo",
+    "Amor - Eydie Gormé & Los Panchos",
+    "Buena Vista Social Club Presents Ibrahim Ferrer - Ibrahim Ferrer",
+    "Buena Vista Social Club Presents: Omara Portuondo - Omara Portuondo",
+    "Romance - Luis Miguel",
+    "Chavela Vargas - Chavela Vargas",
+    "Siluetas en trio: Vol. II - Los Tres Ases",
+    "Norma - Mon Laferte",
+    "Sublime Ilusión - Eliades Ochoa / Cuarteto Patria"
 ];
 
 const parseAlbums = (album: string): ParsedAlbum => {
