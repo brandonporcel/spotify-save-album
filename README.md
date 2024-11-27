@@ -55,6 +55,7 @@ npm run dev
 
 ## 📋 TODO List
 
+- [ ] FIX RYM GUIDES. format has to be artist - album (year)[optional]
 - [ ] UI (User Interface): Add an input field and a button for easier album entry.
 - [ ] Validation: Ensure albums are saved correctly.
 - [ ] Guides: Create guides for non-developers explaining how to extract innerHTML from a webpage.
