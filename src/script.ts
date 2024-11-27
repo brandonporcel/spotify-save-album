@@ -5,15 +5,15 @@ dotenv.config();
 
 const albums: string[] = [
   "Buena Vista Social Club - Buena Vista Social Club",
-  "100% Lúcidos - Macha y El Bloque Depresivo",
-  "Amor - Eydie Gormé & Los Panchos",
-  "Buena Vista Social Club Presents Ibrahim Ferrer - Ibrahim Ferrer",
-  "Buena Vista Social Club Presents: Omara Portuondo - Omara Portuondo",
-  "Romance - Luis Miguel",
+  "Macha y El Bloque Depresivo - 100% Lúcidos",
+  "Eydie Gormé & Los Panchos - Amor",
+  "Ibrahim Ferrer - Buena Vista Social Club Presents Ibrahim Ferrer",
+  "Omara Portuondo - Buena Vista Social Club Presents: Omara Portuondo",
+  "Luis Miguel - Romance",
   "Chavela Vargas - Chavela Vargas",
-  "Siluetas en trio: Vol. II - Los Tres Ases",
-  "Norma - Mon Laferte",
-  "Sublime Ilusión - Eliades Ochoa / Cuarteto Patria",
+  "Los Tres Ases - Siluetas en trio: Vol. II",
+  "Mon Laferte - Norma",
+  "Eliades Ochoa / Cuarteto Patria - Sublime Ilusión",
 ];
 
 const parseAlbums = (album: string): ParsedAlbum => {
