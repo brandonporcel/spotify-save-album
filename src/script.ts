@@ -3,17 +3,17 @@ import axios from "axios";
 import { AlbumResponse, ParsedAlbum } from "./types/definitions";
 dotenv.config();
 
-const albums: string[] =[
-    "Buena Vista Social Club - Buena Vista Social Club",
-    "100% Lúcidos - Macha y El Bloque Depresivo",
-    "Amor - Eydie Gormé & Los Panchos",
-    "Buena Vista Social Club Presents Ibrahim Ferrer - Ibrahim Ferrer",
-    "Buena Vista Social Club Presents: Omara Portuondo - Omara Portuondo",
-    "Romance - Luis Miguel",
-    "Chavela Vargas - Chavela Vargas",
-    "Siluetas en trio: Vol. II - Los Tres Ases",
-    "Norma - Mon Laferte",
-    "Sublime Ilusión - Eliades Ochoa / Cuarteto Patria"
+const albums: string[] = [
+  "Buena Vista Social Club - Buena Vista Social Club",
+  "100% Lúcidos - Macha y El Bloque Depresivo",
+  "Amor - Eydie Gormé & Los Panchos",
+  "Buena Vista Social Club Presents Ibrahim Ferrer - Ibrahim Ferrer",
+  "Buena Vista Social Club Presents: Omara Portuondo - Omara Portuondo",
+  "Romance - Luis Miguel",
+  "Chavela Vargas - Chavela Vargas",
+  "Siluetas en trio: Vol. II - Los Tres Ases",
+  "Norma - Mon Laferte",
+  "Sublime Ilusión - Eliades Ochoa / Cuarteto Patria",
 ];
 
 const parseAlbums = (album: string): ParsedAlbum => {
@@ -104,14 +104,12 @@ const handleItems = async (
           .toLowerCase()
           .normalize("NFD")
           .replace(/[\u0300-\u036f]/g, "");
-        const albumAskedName = albumData.name
+        const albumAskedName = album.name
           .toLowerCase()
           .normalize("NFD")
           .replace(/[\u0300-\u036f]/g, "");
 
-        const nameMismatch =
-          albumDataName !== albumAskedName &&
-          !albumDataName.includes(albumAskedName);
+        const nameMismatch = albumDataName !== albumAskedName;
 
         if (nameMismatch) {
           console.log(

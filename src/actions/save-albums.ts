@@ -24,15 +24,14 @@ const handleItems = async (parsedAlbums: ParsedAlbum[]) => {
           .toLowerCase()
           .normalize("NFD")
           .replace(/[\u0300-\u036f]/g, "");
-        const albumAskedName = albumData.name
+        const albumAskedName = album.name
           .toLowerCase()
           .normalize("NFD")
           .replace(/[\u0300-\u036f]/g, "");
 
-        if (
-          albumDataName !== albumAskedName &&
-          !albumDataName.includes(albumAskedName)
-        ) {
+        const nameMismatch = albumDataName !== albumAskedName;
+
+        if (nameMismatch) {
           console.warn(
             color.yellow(
               `⚠️ Mismatch: '${album.name}' does not match found album '${albumData.name}'`
