@@ -2,7 +2,7 @@
 
 A small script to save albums to your personal Spotify library. This project is designed for individual use and makes it easy to automate adding albums to your Spotify library.
 
-[guides](https://github.com/brandonporcel/spotify-save-album/blob/main/src/guides/600-latam/index.md) 
+[guides](https://github.com/brandonporcel/spotify-save-album?tab=readme-ov-file#-guides) 
 ## ![image](https://github.com/user-attachments/assets/f4e83148-a018-43cc-ab59-7cf243a64a30)
 
 ## 📦 Installation
