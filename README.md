@@ -68,9 +68,15 @@ npm run dev
 - Spotify Web API SDK
 
 ## 📚 Guides
+
 ### RYM
-  - [chart](https://github.com/brandonporcel/spotify-save-album/blob/main/src/guides/rym/chart/chart.md)
-  - [playlist](https://github.com/brandonporcel/spotify-save-album/blob/main/src/guides/rym/playlist/playlist.md)
+
+- [chart](https://github.com/brandonporcel/spotify-save-album/blob/main/src/guides/rym/chart/chart.md)
+- [playlist](https://github.com/brandonporcel/spotify-save-album/blob/main/src/guides/rym/playlist/playlist.md)
+
+## 📝 Contributing
+
+Open! Make a pr
 
 ## 📝 Feedback
 
