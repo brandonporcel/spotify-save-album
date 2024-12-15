@@ -4,7 +4,7 @@ This guide explains how to retrieve individual albums from the **"600 Best LATAM
 
 ![600 latam list](1.png)
 [cta edit](https://github.com/brandonporcel/spotify-save-album/edit/main/src/script.ts) <br/>
-[cta code](https://github.com/brandonporcel/spotify-save-album/tree/main/src/guides/600-latam/index.md#Example-Script)
+[cta code](https://github.com/brandonporcel/spotify-save-album/blob/test/src/guides/600-latam/index.md#-example-script)
 
 ---
 
