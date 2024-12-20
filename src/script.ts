@@ -7,16 +7,16 @@ import { handleItems } from "./actions/handle-items";
 dotenv.config();
 
 const ALBUMS: string[] = [
-  "Varios Artistas - La música de Rafael Hernández",
-  "Rodolfo Aicardi Con Los Hispanos - Qué chévere Volumen 2",
-  "Orquesta Filarmónica de la Ciudad de México - 4 compositores mexicanos",
-  "Pedro Mo - Ensayos del Camarada Lacrasoft y Algunos Cómplices Metafísicos",
-  "Binomio de Oro - Por lo alto",
-  "Varios Artistas - Boricua Guerrero: First Combat",
-  "Nelson Ned - Si las flores pudieran hablar",
-  "Cuarteto Latinoamericano, Alberto Ginestera - The Three String Quartets",
-  "Orquesta Casino de la Playa - Memories of Cuba",
-  "Frankie Ruiz - Solista pero no solo",
+    "Julian Carrillo, Cuarteto Bredo - Primer Cuarteto Atonal",
+    "Cecilia - Cecilia",
+    "Leo Brouwer - Música para guitarra",
+    "Wos - Caravana",
+    "Andrés Huesca y sus Costeños - Recordando",
+    "Lola Beltrán - El Palacio de las Bellas Artes abre sus Puertas a La Reyna de la Canción Ranchera",
+    "ÌFÉ - IIII+IIII",
+    "Broncco - B’Rock",
+    "Pacho Galán y su Orquesta - Fiesta en Colombia",
+    "Lecuona Cuban Boys & Orquesta Antobal - Rumba And Conga Album, Volume 1"
 ];
 
 let accessToken = "";
