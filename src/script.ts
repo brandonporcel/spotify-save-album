@@ -7,16 +7,16 @@ import { handleItems } from "./actions/handle-items";
 dotenv.config();
 
 const ALBUMS: string[] = [
-    "“La música de Rafael Hernández” Varios Artistas",
-    "Rodolfo Aicardi Con Los Hispanos - Qué chévere Volumen 2",
-    "Orquesta Filarmónica de la Ciudad de México - 4 compositores mexicanos",
-    "Pedro Mo - Ensayos del Camarada Lacrasoft y Algunos Cómplices Metafísicos",
-    "Binomio de Oro - Por lo alto",
-    "Varios Artistas - Boricua Guerrero: First Combat",
-    "Nelson Ned - Si las flores pudieran hablar",
-    "Cuarteto Latinoamericano – Alberto Ginestera - The Three String Quartets",
-    "Orquesta Casino de la Playa - Memories of Cuba",
-    "Frankie Ruiz - Solista pero no solo"
+  "Varios Artistas - La música de Rafael Hernández",
+  "Rodolfo Aicardi Con Los Hispanos - Qué chévere Volumen 2",
+  "Orquesta Filarmónica de la Ciudad de México - 4 compositores mexicanos",
+  "Pedro Mo - Ensayos del Camarada Lacrasoft y Algunos Cómplices Metafísicos",
+  "Binomio de Oro - Por lo alto",
+  "Varios Artistas - Boricua Guerrero: First Combat",
+  "Nelson Ned - Si las flores pudieran hablar",
+  "Cuarteto Latinoamericano, Alberto Ginestera - The Three String Quartets",
+  "Orquesta Casino de la Playa - Memories of Cuba",
+  "Frankie Ruiz - Solista pero no solo",
 ];
 
 let accessToken = "";
@@ -50,7 +50,6 @@ const main = async () => {
   accessToken = res.access_token;
 
   const parsedAlbums = ALBUMS.map(parseAlbums);
-
   const sdk = SpotifyApi.withAccessToken("client_id", res);
   setSdk(sdk);
 

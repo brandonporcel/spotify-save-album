@@ -2,9 +2,10 @@
 
 This guide explains how to retrieve individual albums from the **"600 Best LATAM Albums"** article by inspecting elements on the webpage. Follow these steps to build an array of albums formatted as `Artist - Album`.
 
-![600 latam list](1.png)
 [cta edit](https://github.com/brandonporcel/spotify-save-album/edit/main/src/script.ts) <br/>
-[cta code](https://github.com/brandonporcel/spotify-save-album/blob/test/src/guides/600-latam/index.md#-example-script)
+[cta code](https://github.com/brandonporcel/spotify-save-album/blob/main/src/guides/600-latam/index.md#-example-script)
+
+![600 latam list](1.png)
 
 ---
 
@@ -65,20 +66,24 @@ const albums = [
 Here’s a simplified example to extract and display the first 10 albums:
 
 ```js
-const albums = Array.from(
+const a = Array.from(
   document.querySelectorAll(
     "h2.gb-headline.gb-headline-770ac6a1.gb-headline-text"
   )
-)
-  .map((el) =>
-    el.innerText
-      .replace("«", "")
-      .replace("»", " -")
-      .split(" - ")
-      .reverse()
-      .join(" - ")
-  )
-  .slice(0, 10);
+).map((el) =>
+  el.innerText
+    .replace("«", "")
+    .replace("»", " -")
+    .replace("“", "")
+    .replace("”", " -")
+    .replace(/\u2013|\u2014/g, ",") // Reemplazar guion largo o mediano con coma
+    .replace(/\s+,/g, ",") // Eliminar espacios antes de las comas
+    .split(" - ")
+    .reverse()
+    .join(" - ")
+);
+
+const albums = a.slice(0, 10);
 
 console.log(albums);
 ```
