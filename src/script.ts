@@ -7,16 +7,16 @@ import { handleItems } from "./actions/handle-items";
 dotenv.config();
 
 const ALBUMS: string[] = [
-    "Julian Carrillo, Cuarteto Bredo - Primer Cuarteto Atonal",
-    "Cecilia - Cecilia",
-    "Leo Brouwer - Música para guitarra",
-    "Wos - Caravana",
-    "Andrés Huesca y sus Costeños - Recordando",
-    "Lola Beltrán - El Palacio de las Bellas Artes abre sus Puertas a La Reyna de la Canción Ranchera",
-    "ÌFÉ - IIII+IIII",
-    "Broncco - B’Rock",
-    "Pacho Galán y su Orquesta - Fiesta en Colombia",
-    "Lecuona Cuban Boys & Orquesta Antobal - Rumba And Conga Album, Volume 1"
+    "Heitor Villa-Lobos & Orchestra National de la Radiodiffusion Française - Bachianas brasileiras Nos. 2, 5, 6 & 9",
+    "Belanova - Dulce Beat",
+    "La India - Dicen que soy",
+    "Monsieur Periné - Caja de Música",
+    "Nathy Peluso - Calambre",
+    "Gaby Moreno - Postales",
+    "Arco Iris - Sudamérica o el regreso a la aurora",
+    "Ivy Queen - Diva",
+    "Natanael Cano, Junior H y Dan Sánchez - Corridos tumbados",
+    "Bajofondo - Mar dulce"
 ];
 
 let accessToken = "";
