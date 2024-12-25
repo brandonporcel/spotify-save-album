@@ -7,16 +7,16 @@ import { handleItems } from "./actions/handle-items";
 dotenv.config();
 
 const ALBUMS: string[] = [
-    "Heitor Villa-Lobos & Orchestra National de la Radiodiffusion Française - Bachianas brasileiras Nos. 2, 5, 6 & 9",
-    "Belanova - Dulce Beat",
-    "La India - Dicen que soy",
-    "Monsieur Periné - Caja de Música",
-    "Nathy Peluso - Calambre",
-    "Gaby Moreno - Postales",
-    "Arco Iris - Sudamérica o el regreso a la aurora",
-    "Ivy Queen - Diva",
-    "Natanael Cano, Junior H y Dan Sánchez - Corridos tumbados",
-    "Bajofondo - Mar dulce"
+    "El Parque - Oma",
+    "Lucrecia Dalt - ¡Ay!",
+    "La Barranca - El fuego de la noche",
+    "Alfonso Lovo - La gigantona",
+    "Tatico Henríquez y Sus Muchachos - 20 Éxitos",
+    "Eumir Deodato - Deodato 2",
+    "Vico C / DJ Negro - Misión: La Cima",
+    "Nicola Cruz - Prender el alma",
+    "iLe - Almadura",
+    "Buenos Muchachos - Amanecer búho"
 ];
 
 let accessToken = "";
