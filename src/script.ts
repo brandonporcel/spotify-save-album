@@ -7,16 +7,16 @@ import { handleItems } from "./actions/handle-items";
 dotenv.config();
 
 const ALBUMS: string[] = [
-    "El Parque - Oma",
-    "Lucrecia Dalt - ¡Ay!",
-    "La Barranca - El fuego de la noche",
-    "Alfonso Lovo - La gigantona",
-    "Tatico Henríquez y Sus Muchachos - 20 Éxitos",
-    "Eumir Deodato - Deodato 2",
-    "Vico C / DJ Negro - Misión: La Cima",
-    "Nicola Cruz - Prender el alma",
-    "iLe - Almadura",
-    "Buenos Muchachos - Amanecer búho"
+    "Soda Stereo - Signos",
+    "No Te Va Gustar - Este viento fuerte que sopla",
+    "Amanda Miguel - El Sonido Vol. 1",
+    "Sandy y Papo - Sandy & Papo MC",
+    "Los Teen Tops - Teen Tops",
+    "Dengue Dengue Dengue! - La alianza profana",
+    "Chico Trujillo - Plato único bailable",
+    "Varios Artistas - 14 Cañonazos Bailables, Vol 1",
+    "Brujería - Raza odiada",
+    "Señor Loop - Vikorg"
 ];
 
 let accessToken = "";
