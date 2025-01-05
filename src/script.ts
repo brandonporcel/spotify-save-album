@@ -7,16 +7,16 @@ import { handleItems } from "./actions/handle-items";
 dotenv.config();
 
 const ALBUMS: string[] = [
-    "Soda Stereo - Signos",
-    "No Te Va Gustar - Este viento fuerte que sopla",
-    "Amanda Miguel - El Sonido Vol. 1",
-    "Sandy y Papo - Sandy & Papo MC",
-    "Los Teen Tops - Teen Tops",
-    "Dengue Dengue Dengue! - La alianza profana",
-    "Chico Trujillo - Plato único bailable",
-    "Varios Artistas - 14 Cañonazos Bailables, Vol 1",
-    "Brujería - Raza odiada",
-    "Señor Loop - Vikorg"
+    "ChocQuibTown - Oro",
+    "Antonio Aguilar - 15 Exitos con Tambora Vol. 1-3",
+    "Vytas Brenner - La ofrenda de Vytas Brenner",
+    "Emma Junaro - Resolana",
+    "Olga Guillot con la Orquesta Hermanos Castro - La mejor voz cancionera de Cuba",
+    "Sandro - La Magia de Sandro",
+    "Café Tacvba - Cuatro caminos",
+    "Virulo - Génesis según Virulo",
+    "Carlos Vives - La tierra del olvido",
+    "La Factoría - DJ Pablito presenta La Factoría"
 ];
 
 let accessToken = "";
