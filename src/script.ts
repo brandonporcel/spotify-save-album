@@ -7,16 +7,16 @@ import { handleItems } from "./actions/handle-items";
 dotenv.config();
 
 const ALBUMS: string[] = [
-    "ChocQuibTown - Oro",
-    "Antonio Aguilar - 15 Exitos con Tambora Vol. 1-3",
-    "Vytas Brenner - La ofrenda de Vytas Brenner",
-    "Emma Junaro - Resolana",
-    "Olga Guillot con la Orquesta Hermanos Castro - La mejor voz cancionera de Cuba",
-    "Sandro - La Magia de Sandro",
-    "Café Tacvba - Cuatro caminos",
-    "Virulo - Génesis según Virulo",
-    "Carlos Vives - La tierra del olvido",
-    "La Factoría - DJ Pablito presenta La Factoría"
+    "Xiomara Fortuna - Son Verdad",
+    "Jorge López Ruiz - Bronca Buenos Aires",
+    "Rita Montaner - 33 de Colección",
+    "Augusto Bracho - Mercado de los Corotos",
+    "Celeste Mendoza con las orquestas de Bebo Valdés y Ernesto Duarte - La voz de Celeste Mendoza",
+    "Los Relámpagos del Norte - El Disco de Oro",
+    "Los Mac’s - Kaleidoscope Men",
+    "Bronco - Salvaje y tierno",
+    "Tulipa - Efêmera",
+    "Domínguez, el Gringo, Cavour - Folklore"
 ];
 
 let accessToken = "";
