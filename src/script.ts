@@ -7,16 +7,16 @@ import { handleItems } from "./actions/handle-items";
 dotenv.config();
 
 const ALBUMS: string[] = [
-    "Xiomara Fortuna - Son Verdad",
-    "Jorge López Ruiz - Bronca Buenos Aires",
-    "Rita Montaner - 33 de Colección",
-    "Augusto Bracho - Mercado de los Corotos",
-    "Celeste Mendoza con las orquestas de Bebo Valdés y Ernesto Duarte - La voz de Celeste Mendoza",
-    "Los Relámpagos del Norte - El Disco de Oro",
-    "Los Mac’s - Kaleidoscope Men",
-    "Bronco - Salvaje y tierno",
-    "Tulipa - Efêmera",
-    "Domínguez, el Gringo, Cavour - Folklore"
+    "Pablo Milanés - Versos José Martí cantados por Pablo Milanés",
+    "Austin TV - La última noche del mundo",
+    "La Vela Puerca - De bichos y flores",
+    "Ñanda Mañachi - 1",
+    "Zoé - Memo Rex Commander y el corazón atómico de la Vía Láctea",
+    "Myriam Hernández - Myriam Hernández 2",
+    "Libido - Hembra",
+    "Systema Solar - Systema Solar",
+    "Judith Reyes - Crónica mexicana",
+    "Banda Sinaloense Del Recodo - El Sinaloense"
 ];
 
 let accessToken = "";
