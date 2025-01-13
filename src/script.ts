@@ -7,16 +7,16 @@ import { handleItems } from "./actions/handle-items";
 dotenv.config();
 
 const ALBUMS: string[] = [
-    "Pablo Milanés - Versos José Martí cantados por Pablo Milanés",
-    "Austin TV - La última noche del mundo",
-    "La Vela Puerca - De bichos y flores",
-    "Ñanda Mañachi - 1",
-    "Zoé - Memo Rex Commander y el corazón atómico de la Vía Láctea",
-    "Myriam Hernández - Myriam Hernández 2",
-    "Libido - Hembra",
-    "Systema Solar - Systema Solar",
-    "Judith Reyes - Crónica mexicana",
-    "Banda Sinaloense Del Recodo - El Sinaloense"
+    "Los Tetas - Mama funk",
+    "Camila Moreno - Mala madre",
+    "Orquesta Akokán - Orquesta Akokán",
+    "Sal y Mileto - Sal y Mileto",
+    "Lydia Mendoza - Mal hombre",
+    "Los Pericos - Pampas Reggae",
+    "Armando Manzanero - A mi amor… con mi amor",
+    "Joan Sebastian - En vivo en la México",
+    "Babasónicos - Infame",
+    "Lucho Barrios - Marabú"
 ];
 
 let accessToken = "";
