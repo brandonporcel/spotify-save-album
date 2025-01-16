@@ -7,16 +7,16 @@ import { handleItems } from "./actions/handle-items";
 dotenv.config();
 
 const ALBUMS: string[] = [
-    "Los Tetas - Mama funk",
-    "Camila Moreno - Mala madre",
-    "Orquesta Akokán - Orquesta Akokán",
-    "Sal y Mileto - Sal y Mileto",
-    "Lydia Mendoza - Mal hombre",
-    "Los Pericos - Pampas Reggae",
-    "Armando Manzanero - A mi amor… con mi amor",
-    "Joan Sebastian - En vivo en la México",
-    "Babasónicos - Infame",
-    "Lucho Barrios - Marabú"
+    "Las Chicas del Can - Caribe",
+    "Timbiriche - Timbiriche VII",
+    "Juan D’Arienzo - For export",
+    "Perrozompopo - Romper el silencio",
+    "Lucila Campos & Óscar Avilés - Valseando Festejos",
+    "Charlie Zaa - Sentimientos",
+    "Pérez Prado - Prez",
+    "Christian Nodal - Me dejé llevar",
+    "Roberto Roena y su Apollo Sound - Lucky 7",
+    "José José - José José"
 ];
 
 let accessToken = "";
