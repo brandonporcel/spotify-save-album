@@ -7,16 +7,16 @@ import { handleItems } from "./actions/handle-items";
 dotenv.config();
 
 const ALBUMS: string[] = [
-    "Las Chicas del Can - Caribe",
-    "Timbiriche - Timbiriche VII",
-    "Juan D’Arienzo - For export",
-    "Perrozompopo - Romper el silencio",
-    "Lucila Campos & Óscar Avilés - Valseando Festejos",
-    "Charlie Zaa - Sentimientos",
-    "Pérez Prado - Prez",
-    "Christian Nodal - Me dejé llevar",
-    "Roberto Roena y su Apollo Sound - Lucky 7",
-    "José José - José José"
+    "Pérez Prado - Mambo",
+    "Opa - Goldenwings",
+    "Los Corraleros de Majagual - Alegre Majagual",
+    "Atahualpa Yupanqui - El payador perseguido, relato por milonga",
+    "Renata Flores - Isqun",
+    "Kin-Lalat - Ixim K’in Q’aaQ’, Maíz Y Fusil",
+    "Papá Roncón & Katanga - Marimba Magia",
+    "Ángela Carrasco - Quererte a ti",
+    "Horacio Guarany - Horacio Guarany",
+    "Los Wawancó - La burrita"
 ];
 
 let accessToken = "";
