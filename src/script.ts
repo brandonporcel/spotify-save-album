@@ -7,16 +7,16 @@ import { handleItems } from "./actions/handle-items";
 dotenv.config();
 
 const ALBUMS: string[] = [
-    "Pérez Prado - Mambo",
-    "Opa - Goldenwings",
-    "Los Corraleros de Majagual - Alegre Majagual",
-    "Atahualpa Yupanqui - El payador perseguido, relato por milonga",
-    "Renata Flores - Isqun",
-    "Kin-Lalat - Ixim K’in Q’aaQ’, Maíz Y Fusil",
-    "Papá Roncón & Katanga - Marimba Magia",
-    "Ángela Carrasco - Quererte a ti",
-    "Horacio Guarany - Horacio Guarany",
-    "Los Wawancó - La burrita"
+    "Willie Colón & Héctor Lavoe - Asalto Navideño",
+    "Petrona Martínez - Bonito que canta",
+    "RBD - Rebelde",
+    "Flor Pucarina - Corazón de piedra",
+    "Mario Benedetti & Daniel Viglietti - A dos voces",
+    "Alejandro y María Laura - Fiesta para los muertos",
+    "Caifanes - Caifanes",
+    "Elia y Elizabeth - Elia y Elizabeth",
+    "Congreso - Para los arqueólogos del futuro",
+    "Mauricio Redolés - ¿Quién mató a Gaete?"
 ];
 
 let accessToken = "";
