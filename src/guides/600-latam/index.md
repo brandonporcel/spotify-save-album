@@ -66,26 +66,30 @@ const albums = [
 Here’s a simplified example to extract and display the first 10 albums:
 
 ```js
-const a = Array.from(
-  document.querySelectorAll(
-    "h2.gb-headline.gb-headline-770ac6a1.gb-headline-text"
-  )
-).map((el) =>
-  el.innerText
-    .replace("«", "")
-    .replace("»", " -")
-    .replace("“", "")
-    .replace("”", " -")
-    .replace(/\u2013|\u2014/g, ",") // Reemplazar guion largo o mediano con coma
-    .replace(/\s+,/g, ",") // Eliminar espacios antes de las comas
-    .split(" - ")
-    .reverse()
-    .join(" - ")
-);
+const getAlbums = (start = 0, end = 10) => {
+  const a = Array.from(
+    document.querySelectorAll(
+      "h2.gb-headline.gb-headline-770ac6a1.gb-headline-text"
+    )
+  ).map((el) =>
+    el.innerText
+      .replace("«", "")
+      .replace("»", " -")
+      .replace("“", "")
+      .replace("”", " -")
+      .replace(/\u2013|\u2014/g, ",") // Reemplazar guion largo o mediano con coma
+      .replace(/\s+,/g, ",") // Eliminar espacios antes de las comas
+      .split(" - ")
+      .reverse()
+      .join(" - ")
+  );
 
-const albums = a.slice(0, 10);
+  const albums = a.slice(start, end);
 
-console.log(albums);
+  return albums;
+};
+
+getAlbums(0, 10);
 ```
 
 [cta edit](https://github.com/brandonporcel/spotify-save-album/edit/main/src/script.ts)
