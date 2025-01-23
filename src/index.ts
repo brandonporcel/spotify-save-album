@@ -10,7 +10,8 @@ dotenv.config();
 const app = express();
 const CLIENT_ID = process.env.CLIENT_ID || "";
 const PORT = process.env.PORT || 8888;
-const redirect_uri = `http://localhost:${PORT}/callback`;
+const redirect_uri =
+  process.env.REDIRECT_URI || `http://localhost:${PORT}/callback`;
 
 app.set("view engine", "ejs");
 app.set("views", __dirname + "/../views");
