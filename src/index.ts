@@ -42,7 +42,7 @@ app.get("/login", (_req, res) => {
 });
 
 app.get("/callback", async (req: any, res: any) => {
-  console.log("CALLBACK");
+  console.log("CALLBACK", req.query);
   try {
     const { code } = req.query;
     if (!code) {
