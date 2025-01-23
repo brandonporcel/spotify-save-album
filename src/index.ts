@@ -41,10 +41,20 @@ app.get("/login", (_req, res) => {
   res.redirect(url);
 });
 
-app.get("/callback", async (req, res) => {
-  const { access_token } = await authCallback(req);
+app.get("/callback", async (req: any, res: any) => {
+  console.log("CALLBACK");
+  try {
+    const { code } = req.query;
+    if (!code) {
+      return res.status(400).send("Missing code");
+    }
 
-  res.render("callback", { access_token });
+    const { access_token } = await authCallback(code);
+    res.render("callback", { access_token });
+  } catch (error) {
+    console.error("Error during callback processing:", error);
+    res.status(500).send("Internal Server Error");
+  }
 });
 
 app.post("/save", async (req, res) => {
