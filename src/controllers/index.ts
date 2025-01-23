@@ -39,6 +39,9 @@ export const authCallback = async (
   if (!state) {
     throw new Error("state_mismatch");
   }
+  if (!code) {
+    throw new Error("code_mismatch");
+  }
 
   try {
     const authData = await authorizeUser(code);

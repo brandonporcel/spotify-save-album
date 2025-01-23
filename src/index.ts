@@ -44,12 +44,7 @@ app.get("/login", (_req, res) => {
 app.get("/callback", async (req: any, res: any) => {
   console.log("CALLBACK", req.query);
   try {
-    const { code } = req.query;
-    if (!code) {
-      return res.status(400).send("Missing code");
-    }
-
-    const { access_token } = await authCallback(code);
+    const { access_token } = await authCallback(req);
     res.render("callback", { access_token });
   } catch (error) {
     console.error("Error during callback processing:", error);
