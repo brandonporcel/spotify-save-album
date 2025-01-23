@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://images.emojiterra.com/twitter/v13.1/128px/1f3b7.png"
+      type="image/png"
+    />
+    <title>Resultado - Guardar Álbumes</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #121212;
+        color: white;
+        height: 100vh;
+        display: grid;
+        place-content: center;
+      }
+
+      .container {
+        text-align: center;
+        padding: 40px;
+        max-width: 800px;
+        margin: 0 auto;
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        height: max-content;
+      }
+
+      h1 {
+        color: #1db954;
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        font-size: 22px;
+        margin-top: 20px;
+        color: #ffffff;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        font-size: 18px;
+        margin: 10px 0;
+        color: #b3b3b3;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      strong {
+        color: #1db954;
+      }
+
+      p {
+        font-size: 18px;
+        color: #b3b3b3;
+        margin-top: 10px;
+      }
+
+      a {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #1db954;
+        color: white;
+        text-decoration: none;
+        border-radius: 30px;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+      }
+
+      a:hover {
+        background-color: #14833b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Resultado de Guardar Álbumes</h1>
+
+      <h2>Álbumes guardados exitosamente:</h2>
+      <% if (saved.length > 0) { %>
+      <ul>
+        <% for (let album of saved) { %>
+        <li>
+          <strong><%= album.name %></strong> - <%= album.artists[0].name %>
+        </li>
+        <% } %>
+      </ul>
+      <% } else { %>
+      <p>No se guardaron álbumes.</p>
+      <% } %>
+
+      <h2>Álbumes no encontrados:</h2>
+      <% if (unFound.length > 0) { %>
+      <ul>
+        <% for (let album of unFound) { %>
+        <li><strong><%= album.name %></strong> - <%= album.artist %></li>
+        <% } %>
+      </ul>
+      <% } else { %>
+      <p>Todos los álbumes fueron encontrados.</p>
+      <% } %>
+
+      <a href="/">Volver</a>
+    </div>
+  </body>
+</html>

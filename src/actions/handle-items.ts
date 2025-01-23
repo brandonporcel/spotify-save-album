@@ -6,6 +6,8 @@ export const handleItems = async (parsedAlbums: ParsedAlbum[]) => {
   const sdk = getSdk();
 
   try {
+    let unFoundAlbums: ParsedAlbum[] = [];
+    let toSave: ParsedAlbum[] = [];
     const results = await Promise.all(
       parsedAlbums.map(async (album) => {
         const items = await sdk.search(
@@ -30,6 +32,7 @@ export const handleItems = async (parsedAlbums: ParsedAlbum[]) => {
         const nameMismatch = albumDataName !== albumAskedName;
 
         if (nameMismatch) {
+          unFoundAlbums.push(album);
           console.warn(
             color.yellow(
               `⚠️ Mismatch: '${album.name}' does not match found album '${albumData.name}'`
@@ -37,14 +40,17 @@ export const handleItems = async (parsedAlbums: ParsedAlbum[]) => {
           );
           return null;
         }
-
+        toSave.push(album);
         return albumData;
       })
     );
 
-    return results.filter((album) => album !== null);
+    return {
+      toSave: results.filter((album) => album !== null),
+      unFoundAlbums,
+    };
   } catch (error: any) {
     console.error(color.red(`❌ Error handling albums: ${error.message}`));
-    return [];
+    throw new Error("Error handling albums");
   }
 };
