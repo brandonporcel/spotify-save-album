@@ -42,7 +42,6 @@ app.get("/login", (_req, res) => {
 });
 
 app.get("/callback", async (req: any, res: any) => {
-  console.log("CALLBACK", req.query);
   try {
     const { access_token } = await authCallback(req);
     res.render("callback", { access_token });
