@@ -2,8 +2,8 @@
 
 This guide explains how to retrieve individual albums from the **"600 Best LATAM Albums"** article by inspecting elements on the webpage. Follow these steps to build an array of albums formatted as `Artist - Album`.
 
-[cta edit](https://github.com/brandonporcel/spotify-save-album/edit/main/src/script.ts) <br/>
 [cta code](https://github.com/brandonporcel/spotify-save-album/blob/main/src/guides/600-latam/index.md#-example-script)
+[cta edit](https://github.com/brandonporcel/spotify-save-album/edit/main/src/script.ts) <br/>
 
 ![600 latam list](1.png)
 
