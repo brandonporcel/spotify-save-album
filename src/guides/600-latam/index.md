@@ -2,7 +2,7 @@
 
 This guide explains how to retrieve individual albums from the **"600 Best LATAM Albums"** article by inspecting elements on the webpage. Follow these steps to build an array of albums formatted as `Artist - Album`.
 
-[cta code](https://github.com/brandonporcel/spotify-save-album/blob/main/src/guides/600-latam/index.md#-example-script)
+[cta code](https://github.com/brandonporcel/spotify-save-album/blob/main/src/guides/600-latam/index.md#-example-script)<br/>
 [cta edit](https://github.com/brandonporcel/spotify-save-album/edit/main/src/script.ts) <br/>
 
 ![600 latam list](1.png)
@@ -66,7 +66,7 @@ const albums = [
 Here’s a simplified example to extract and display the first 10 albums:
 
 ```js
-const getAlbums = (start = 0, end = 10) => {
+const getAlbums = (n = 0) => {
   const a = Array.from(
     document.querySelectorAll(
       "h2.gb-headline.gb-headline-770ac6a1.gb-headline-text"
@@ -84,12 +84,14 @@ const getAlbums = (start = 0, end = 10) => {
       .join(" - ")
   );
 
-  const albums = a.slice(start, end);
-
-  return albums;
+  const start = n * 10;
+  const end = start + 10;
+  return a.slice(start, end);
 };
 
-getAlbums(0, 10);
+getAlbums(0); // Devuelve los primeros 10
 ```
 
-[cta edit](https://github.com/brandonporcel/spotify-save-album/edit/main/src/script.ts)
+[cta save ui](http://spotify-save-album.onrender.com/)<br/>
+[600discoslatam.com](600discoslatam.com)<br/>
+[cta edit script](https://github.com/brandonporcel/spotify-save-album/edit/main/src/script.ts)
