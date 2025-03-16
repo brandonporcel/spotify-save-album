@@ -83,6 +83,20 @@
       a:hover {
         background-color: #14833b;
       }
+
+      button {
+        padding: 5px 10px;
+        background-color: #14833b;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+
+      button:hover {
+        background-color: #1db954;
+      }
     </style>
   </head>
   <body>
@@ -106,7 +120,12 @@
       <% if (unFound.length > 0) { %>
       <ul>
         <% for (let album of unFound) { %>
-        <li><strong><%= album.name %></strong> - <%= album.artist %></li>
+        <li>
+          <strong><%= album.name %></strong> - <%= album.artist %>
+          <button onclick="copyToClipboard('<%= album.name %>')">Copiar nombre</button>
+          <button onclick="copyToClipboard('<%= album.name %>'+' - '+'<%= album.artist %>')">Copiar nombre + artista</button>
+          <br /><small><%= album.description %></small>
+        </li>
         <% } %>
       </ul>
       <% } else { %>
@@ -115,5 +134,16 @@
 
       <a href="/">Volver</a>
     </div>
+
+    <script>
+      function copyToClipboard(text) {
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+      }
+    </script>
   </body>
 </html>

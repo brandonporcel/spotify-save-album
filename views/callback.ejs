@@ -37,33 +37,16 @@
         font-size: 24px;
         color: #1db954;
       }
-
-      p {
-        font-size: 18px;
-        margin-bottom: 10px;
-      }
-
-      code {
-        display: block;
-        background: #333;
-        padding: 10px;
-        border-radius: 5px;
-        color: #1db954;
-        font-family: monospace;
-        font-size: 14px;
-        margin-bottom: 20px;
-        word-break: break-all;
-      }
-
+      
       form {
         display: flex;
         flex-direction: column;
         align-items: center;
       }
-
+      
       label {
-        font-size: 16px;
         margin-bottom: 10px;
+        font-size: 18px;
       }
 
       input {
@@ -99,10 +82,8 @@
   </head>
   <body>
     <div class="container">
-      <h1>Hola!></h1>
-      <p>Tu token de acceso es:</p>
-      <code><%= access_token %></code>
-
+      <h1>Hola!</h1>
+      
       <form action="/save" method="post">
         <label for="albums">Ingresa un array de álbumes:</label>
         <input
@@ -112,7 +93,7 @@
           placeholder="['Kendrick Lamar - GNX']"
           required
         />
-        <button type="submit">Guardar álbumes</button>
+        <button type="submit">Buscar y guardar álbumes</button>
       </form>
     </div>
   </body>
