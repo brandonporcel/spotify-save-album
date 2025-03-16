@@ -32,7 +32,7 @@ export const handleItems = async (parsedAlbums: ParsedAlbum[]) => {
         const nameMismatch = albumDataName !== albumAskedName;
 
         if (nameMismatch) {
-          const description=`'${album.name}' no concide con el encontrado '${albumData.name}'`
+          const description=`No concide con el encontrado '${albumData.name}'`
           unFoundAlbums.push({...album, description});
           console.log(color.yellow(`⚠️ Mismatch: '${album.name}' does not match found album '${albumData.name}'`));
           return null;
