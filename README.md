@@ -57,11 +57,11 @@ npm run dev
 ## 📋 TODO List
 
 - [ ] FIX RYM GUIDES. format has to be artist - album (year)[optional]
-- [ ] UI (User Interface): Add an input field and a button for easier album entry.
-- [ ] Validation: Ensure albums are saved correctly.
+- [x] UI (User Interface): Add an input field and a button for easier album entry.
 - [ ] Guides: Create guides for non-developers explaining how to extract innerHTML from a webpage.
 - [ ] GitHub Action: Fix the action to upload a .txt file with unsaved albums.
 - [ ] Add multi-language support for prompts (EN)
+- [ ] Add IA feature to determine if found album its same than the search one
 
 #### 🛠️ Technologies Used
 
