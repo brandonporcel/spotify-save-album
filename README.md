@@ -62,6 +62,7 @@ npm run dev
 - [ ] GitHub Action: Fix the action to upload a .txt file with unsaved albums.
 - [ ] Add multi-language support for prompts (EN)
 - [ ] Add IA feature to determine if found album its same than the search one
+- [ ] For 600latam: add another script for only get albums on playlist or albums who are only on youtube
 
 #### 🛠️ Technologies Used
 
