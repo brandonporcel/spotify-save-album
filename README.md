@@ -1,9 +1,12 @@
 # Save Albums
 
-A small script to save albums to your personal Spotify library. This project is designed for individual use and makes it easy to automate adding albums to your Spotify library.
+App to save albums to your personal Spotify library. This project is designed for individual use and makes it easy to automate adding albums to your Spotify library.
 
-[guides](https://github.com/brandonporcel/spotify-save-album?tab=readme-ov-file#-guides) 
-## ![image](https://github.com/user-attachments/assets/f4e83148-a018-43cc-ab59-7cf243a64a30)
+> At the moment support for rym charts and lists & [600latam](https://www.600discoslatam.com/) & by terminal (cli).
+
+> See the [guides for each one](#5--go-to-the-guide-you-want).
+
+## ![image](src/guides/og.png)
 
 ## 📦 Installation
 
@@ -29,55 +32,33 @@ REFRESH_TOKEN=your_refresh_token
 REDIRECT_URI=http://localhost:8888/callback
 ```
 
-### 4. **Install dependencies**
-
-Run the following command to install the project dependencies:
+### 4. **Run project**
 
 ```bash
+git clone https://github.com/brandonporcel/spotify-save-album.git
+cd spotify-save-album
 npm install
 ```
 
-### 5. **Set the list of albums**
+## 5. 📚 **Go to the guide you want**
 
-Edit the configuration file to add the albums you want to save:
-
-```js
-const albums = [
-  "Stevie Wonder - Songs in the Key of Life (1976)",
-  "Natalia Lafourcade - De Todas las Flores (2022)",
-];
-```
-
-### 6. **Run index**
-
-```js
-npm run dev
-```
+- [600latam](src/guides/600-latam/readme.md)
+- [rym chart](src/guides/rym/chart/readme.md)
+- [rym playlist](src/guides/rym/playlist/readme.md)
+- [terminal](src/guides/terminal/readme.md)
 
 ## 📋 TODO List
 
-- [ ] FIX RYM GUIDES. format has to be artist - album (year)[optional]
 - [x] UI (User Interface): Add an input field and a button for easier album entry.
-- [ ] Guides: Create guides for non-developers explaining how to extract innerHTML from a webpage.
+- [x] For 600latam: add another script for only get albums on playlist or albums who are only on youtube
 - [ ] GitHub Action: Fix the action to upload a .txt file with unsaved albums.
 - [ ] Add multi-language support for prompts (EN)
 - [ ] Add IA feature to determine if found album its same than the search one
-- [ ] For 600latam: add another script for only get albums on playlist or albums who are only on youtube
 
 #### 🛠️ Technologies Used
 
 - Node js
 - Spotify Web API SDK
-
-## 📚 Guides
-
-### 600 LATAM
-- [list](https://github.com/brandonporcel/spotify-save-album/blob/main/src/guides/600-latam/index.md)
-
-### RYM
-
-- [chart](https://github.com/brandonporcel/spotify-save-album/blob/main/src/guides/rym/chart/chart.md)
-- [playlist](https://github.com/brandonporcel/spotify-save-album/blob/main/src/guides/rym/playlist/playlist.md)
 
 ## 📝 Contributing
 
